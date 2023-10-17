@@ -1,0 +1,141 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Optional padding for inner content */
+    text-align: center;
+  }
+
+/* Style the header with a grey background and some padding */
+header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+header img.logo {
+    float: left;
+    font-weight: bold;
+    height: 50px;
+  }
+header h1 {
+    text-align: center;
+  }
+  /* Change the background color on mouse-over */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+body{
+    background-color: #bebfbc;
+}
+.full-height {
+    height: 100%;
+  }
+h3{
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 15px;
+    grid-row-gap: 25px;
+    margin: 20px auto;
+    max-width: 600px; /* Added to limit the maximum width of the grid */
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    height: 90px;
+    min-width: 100px;
+    max-width: 200px;
+    position: relative; /* Added for positioning */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* This adds a shadow */
+    display: flex; /* Enable flexbox */
+    justify-content: left; /* Center horizontally */
+    align-items: top; /* Center vertically */
+  }
+
+  
+  .button-container {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* 10% less than the width of the grid item */
+    text-align: center;
+  }
+
+  .button-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* background-color: #007bff;*/
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .button-1 {
+    background-color: #28a745;
+  }
+
+  .button-2 {
+    background-color: #2b53a0;
+  }
+
+  .button-3 {
+    background-color: #e40313;
+  }
+
+
+
+  /* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+  }
